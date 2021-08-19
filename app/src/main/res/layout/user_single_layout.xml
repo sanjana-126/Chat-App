@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_single_profilePic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profilepic"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_single_username"
+        android:text="@string/username"
+        android:layout_toRightOf="@+id/user_single_profilePic"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_single_status"
+        android:text="Hey there, I am using LetsChat"
+        android:layout_toRightOf="@+id/user_single_profilePic"
+        android:visibility="gone"
+        android:layout_below="@+id/user_single_username"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="17sp"
+        android:textColor="@color/black" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_on"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_color="#58A63C"
+        app:civ_border_width="10dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/user_single_username"
+        android:layout_marginLeft="-15dp"
+        android:layout_toRightOf="@id/user_single_profilePic" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_off"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="gone"
+        app:civ_border_color="#bfbfbf"
+        app:civ_border_width="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/user_single_username"
+        android:layout_marginLeft="-15dp"
+        android:layout_toRightOf="@id/user_single_profilePic" />
+
+
+
+</RelativeLayout>
